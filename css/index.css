@@ -1,0 +1,306 @@
+/* 共通スタイル */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  opacity: 0.5;
+}
+.wrap {
+  width: 85%;
+  margin: 0 auto;
+}
+.ttl {
+  font-size: 30px;
+  font-weight: bold;
+}
+.button {
+  display: block;
+  width: 300px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  background-color: darkred;
+  color: #fff;
+}
+.often-padding {
+  padding: 80px 0;
+}
+* {
+  box-sizing: border-box;
+}
+.drawer-nav {
+  display: none;
+}
+.menu {
+  display: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 30px;
+  background-color: #fff;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.header-ttl {
+  font-size: 24px;
+  width: 80px;
+}
+.header-nav-list {
+  display: flex;
+  font-weight: bold;
+}
+.header-nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* firstView */
+.firstView {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/mv.png) center/cover;
+  color: #fff;
+}
+.firstView-copy1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+.firstView-copy2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* 株式会社TECHの想い */
+.thought {
+  color: #fff;
+  background-color: black;
+}
+.thought-text {
+  margin-top: 20px;
+}
+
+/* ホーム｜サービス */
+.home-service-ttl {
+  text-align: center;
+}
+.home-service-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.home-service-item {
+  width: 49%;
+  margin-top: 20px;
+  margin-right: calc(100% - (49% * 2));
+}
+.home-service-item:nth-child(2n) {
+  margin-right: 0;
+}
+.home-service-item-ttl {
+  font-weight: bold;
+  font-size: 18px;
+}
+.home-service-btn {
+  margin: 40px auto 0;
+}
+
+/* ホーム｜ニュース */
+.home-news {
+  background-color: black;
+}
+.home-news-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-news-ttl {
+  color: #fff;
+}
+.home-news-btn {
+  width: 160px;
+  font-size: 14px;
+  padding: 7px;
+}
+.home-news-list {
+  margin-top: 20px;
+}
+.home-news-item-link {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.home-news-item-date {
+  margin-right: 10px;
+}
+.home-news-item:not(:first-child) {
+  margin-top: 10px;
+}
+
+/* ホーム｜社員ブログ */
+.home-blog-ttl {
+  text-align: center;
+}
+.home-blog-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+}
+.home-blog-item {
+  width: 32%;
+  margin-right: calc((100% - (32% * 3)) / 2);
+}
+.home-blog-item:nth-child(3n) {
+  margin-right: 0;
+}
+.home-blog-date {
+  margin-top: 5px;
+  margin-right: 20px;
+  font-size: 14px;
+}
+.home-blog-btn {
+  margin: 40px auto 0;
+}
+
+/* ホーム｜会社概要&採用情報 */
+.home-company-list {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 0;
+}
+.home-company-item {
+  width: 50%;
+}
+.home-company-item-link {
+  display: inline-block;
+  width: 100%;
+  line-height: 10;
+  text-align: center;
+}
+.home-company-link {
+  background-color: darkred;
+}
+.home-recruit-link {
+  background-color: black;
+}
+
+/* contact-belt */
+.contact-belt {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+.contact-belt-text {
+  margin-top: 10px;
+}
+.contact-belt-btn {
+  margin: 40px auto 0;
+}
+/* footer */
+.footer {
+  padding: 20px 0;
+  color: #fff;
+  background-color: black;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+.footer-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-nav-item:not(:last-child)::after {
+  content: "|";
+  display: inline-block;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+  .menu {
+    display: inline-block;
+    width: 36px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+  }
+  .menu-line-top,
+  .menu-line-middle,
+  .menu-line-bottom {
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    transition: 0.5s;
+  }
+  .menu-line-top {
+    top: 0;
+  }
+  .menu-line-middle {
+    top: 14px;
+  }
+  .menu-line-bottom {
+    bottom: 0;
+  }
+  .drawer-nav {
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    background: #fff;
+    transition: 0.7s;
+  }
+  .drawer-nav-list {
+    padding-top: 80px;
+    text-align: center;
+  }
+  .drawer-nav-item {
+    margin-top: 40px;
+    color: darkblue;
+    font-size: 18px;
+  }
+  .menu.open span:nth-of-type(1) {
+    top: 14px;
+    transform: rotate(45deg);
+  }
+
+  .menu.open span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .menu.open span:nth-of-type(3) {
+    top: 14px;
+    transform: rotate(-45deg);
+  }
+  .in {
+    transform: translateX(100%);
+  }
+}
