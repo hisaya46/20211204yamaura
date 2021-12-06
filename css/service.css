@@ -94,7 +94,7 @@ img {
 .service-list {
   border-bottom: 1px solid black;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .service-item-img {
     width: 100%;
   }
@@ -202,5 +202,16 @@ img {
   }
   .in {
     transform: translateX(100%);
+  }
+  .copyright {
+    margin: 0 auto;
+  }
+  .footer-nav-item {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .footer-nav-item:not(:last-child)::after {
+    content: none;
   }
 }
