@@ -303,6 +303,15 @@ img {
   .in {
     transform: translateX(100%);
   }
+
+  .home-service-item {
+    width: 100%;
+    margin-right: 0;
+  }
+  .home-blog-item {
+    width: 100%;
+    margin-right: 0;
+  }
   .copyright {
     margin: 0 auto;
   }
